@@ -19,7 +19,7 @@ resource "aws_iam_role_policy_attachment" "lambda_basic_execution" {
 }
 
 resource "aws_lambda_function" "api" {
-  function_name = "chat-api-lambda"
+  function_name = var.lambda_function_name
   runtime       = "python3.10"
   role          = aws_iam_role.lambda_exec_role.arn
   handler       = "main.lambda_handler"  # Change if your entry point differs
