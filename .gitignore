@@ -1,0 +1,14 @@
+# Terraform files to ignore
+.terraform/
+*.tfstate
+*.tfstate.backup
+crash.log
+*.zip
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Credentials or sensitive files
+terraform.tfvars
+*.pem
